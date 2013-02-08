@@ -1,9 +1,9 @@
-module BigosTextBlock
-  class BigosTextBlockElement < PageElement
+module BigosApp
 
+  class BigosTextBlockElement < PageElement
     has_one :text_block, :dependent => :destroy, :class_name => "BigosTextBox::TextBlock"
     after_save :add_text_block
-
+    attr_accessible :is_admin_visible, :name, :type, :page_id, :position, :text_block_attributes
     accepts_nested_attributes_for :text_block
 
     def add_text_block
