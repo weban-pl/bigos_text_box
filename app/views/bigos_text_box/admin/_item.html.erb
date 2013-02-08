@@ -1,0 +1,4 @@
+<%= pe.simple_fields_for :text_block do |tb|%>
+  <%= tb.input :title  %>
+  <%= tb.input :content, :input_html=>{:class => "tinymce", :rows => 40, :cols => 220}  %>
+<% end %>
