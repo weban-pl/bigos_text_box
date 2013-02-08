@@ -16,6 +16,8 @@ After you install BigosTextBox and add it to your Gemfile, you need to run the g
 
 ```console
 rails generate bigos_text_box:install
+rake bigos_text_box:install:migrations
+rake db:migrate
 ```
 
 ## Customization
