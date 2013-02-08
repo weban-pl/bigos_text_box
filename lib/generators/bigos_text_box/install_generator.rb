@@ -14,7 +14,7 @@ module BigosTextBox
 
       def create_settings
         im = BigosApp::InstalledModule.find_or_create_by_name(BigosTextBox.name)
-        im.page_element =  BigosApp::BigosTextBoxElement.name
+        im.page_element =  BigosApp::BigosTextBlockElement.name
         im.save
       end
 
